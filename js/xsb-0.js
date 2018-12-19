@@ -305,6 +305,8 @@ define(['_',
     var $theme = $(':attr(\'^data-xsb-theme\')');
     $theme.on({
       click: function (evt) {
+        $theme.removeClass('active');
+        $(this).addClass('active');
         var thisTheme = {};
         $(this).find('.xsb_theme_cr').each(function (i, item) {
           var colorName;
