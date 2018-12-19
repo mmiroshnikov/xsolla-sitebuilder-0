@@ -227,7 +227,7 @@ define(['_',
     // // );
     // // ReactDOM.render(Switch, document.getElementById('root'));
     this.popups = new GenericPopups();
-
+    this.addThemes();
 
     // this.widgetTrailer = new WidgetTrailer(this); //TODO: переделать трейлер попап
   }
@@ -299,6 +299,40 @@ define(['_',
   }
 
 
+
+  XsollaSiteBuilder.prototype.addThemes = function () {
+    var thiss = this;
+    var $theme = $(':attr(\'^data-xsb-theme\')');
+    $theme.on({
+      click: function (evt) {
+        var thisTheme = {};
+        $(this).find('.xsb_theme_cr').each(function (i, item) {
+          var colorName;
+          switch (i) {
+            case 0:
+              colorName = 'textcolor';
+              break;
+            case 1:
+              colorName = 'accent';
+              break;
+            case 2:
+              colorName = 'accent_text';
+              break;
+            default:
+              colorName = 'textcolor';
+              break;
+          }
+          var color = $(item).css('background-color');
+          thisTheme[colorName] = m__rgbToHexAlpha(color)[0];
+          // thiss.setCustomTheme(colorName, m__rgbToHexAlpha(color)[0]);
+        })
+        thisTheme['back'] = m__hexToRGB(thisTheme['accent_text'], 0.5);
+        thiss.changeTheme(thisTheme, thiss.defaults.theme);
+      }
+    });
+  }
+
+
   XsollaSiteBuilder.prototype.changeTheme = function (colors2, arr2) {
     var thiss = this;
     colors2 = colors2 || this.dataX.global.userTheme;
@@ -350,11 +384,9 @@ define(['_',
         changecss(element[0], rul, clr);
       }
 
-
-
-
     }
   }
+
 
 
 
