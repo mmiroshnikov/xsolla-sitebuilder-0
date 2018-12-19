@@ -330,6 +330,7 @@ define(['_',
         thiss.changeTheme(thisTheme, thiss.defaults.theme);
       }
     });
+    $($theme[0]).trigger("click");
   }
 
 

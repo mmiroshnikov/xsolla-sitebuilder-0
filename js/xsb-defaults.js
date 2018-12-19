@@ -41,6 +41,7 @@ define([
 
     this.theme = {
       'textcolor': [
+        ['.xsb_body', 'color'],
         ['.xsb_theme_cr--3', 'back'],
         ['.xsb_sett_block--colorpicker', 'colorClean'],
         ['.xsb_global_sett_text', 'colorClean'],
@@ -48,7 +49,6 @@ define([
         ['body', 'colorClean'],
         ['a', 'color'],
         ['.bold', 'color'],
-        ['.xsb_body', 'color'],
         ['.xsb_preview_text', 'color'],
         ['.x_steam_h_h', 'color'],  //Цвет с 0.5 прозрачностью
         ['.c_title_block_line', 'back'],  //Цвет с 0.5 прозрачностью
