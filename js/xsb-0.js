@@ -33,6 +33,7 @@ jQuery.expr.pseudos.attrStrict = $.expr.createPseudo(function (arg) {
 
 
 
+
 /* Convert color to rgb */
 /* Accepts an array [hex, alpha] or 2 vars */
 function m__hexToRGB(hex, alpha) { //Todo: OLD
