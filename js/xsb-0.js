@@ -127,7 +127,7 @@ var siteBuilder;
 
 
 requirejs.config({
-  // baseUrl:  baseURL || 'https://bb.githack.com/maiik/xsolla-site-builder/raw/master/',
+  baseUrl:  baseURL || 'https://bb.githack.com/maiik/xsolla-site-builder-0/raw/master/',
   paths: {
     // Require.js appends `.js` extension for you
     // 'react':                       'https://unpkg.com/react@15.3.2/dist/react',
@@ -146,7 +146,7 @@ requirejs.config({
 
 
 define(['_',
-    // 'js/xsb-defaults',
+    'js/xsb-defaults',
     // 'js/xsb-template',
     // 'js/xsb-controller',
     // 'js/xsb-noti',
@@ -161,7 +161,7 @@ define(['_',
     // 'xsolla-uikit'
 ], function (
   _,
-  // Defaults,
+  Defaults,
   // Template,
   // Controllr,
   // Noti,
@@ -178,7 +178,7 @@ define(['_',
     // this.preloader();
     // this.debug = debug;
     // this.version = version;
-    // this.defaults = new Defaults();
+    this.defaults = new Defaults();
     // this._xsb = this;
     // this.modulesDefault = this.defaults.modulesDefault;
     // this.globalDefault = this.defaults.globalDefault;
