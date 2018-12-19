@@ -96,7 +96,6 @@ define([
         ['.xsbps_topmenu_dropdown', 'colorClean'],
       ],
       'accent': [
-
         ['.xsb_theme_cr--1', 'back'],
         //Widgets
         ['.xsb_w_menu_a:hover', 'backClean'],
