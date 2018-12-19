@@ -14,6 +14,7 @@ jQuery.expr.pseudos.attr = $.expr.createPseudo(function (arg) {
 });
 
 
+
 jQuery.expr.pseudos.attrStrict = $.expr.createPseudo(function (arg) {
   var regexp = new RegExp();
   return function(elem) {
