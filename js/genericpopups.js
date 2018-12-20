@@ -47,15 +47,24 @@ define([
           }
         })
 
-        p[onePopUniqName]['$popZ'].on({
-          click: function (evt) {
-            p[onePopUniqName]['$popB'].toggleClass('shown');
-            p[onePopUniqName]['$popZ'].toggleClass('shown');
-            setTimeout(function () {
-              p[onePopUniqName]['$pop'].toggleClass('shown');
-            },200)
-          }
-        })
+      p[onePopUniqName]['$popZ'].on({
+        click: function (evt) {
+          p[onePopUniqName]['$popB'].removeClass('shown');
+          p[onePopUniqName]['$popZ'].removeClass('shown');
+          setTimeout(function () {
+            p[onePopUniqName]['$pop'].removeClass('shown');
+          }, 200)
+        }
+      });
+      $('[data-xpop=\'z,' + popName + '\']').on({
+        click: function (evt) {
+          p[onePopUniqName]['$popB'].removeClass('shown');
+          p[onePopUniqName]['$popZ'].removeClass('shown');
+          setTimeout(function () {
+            p[onePopUniqName]['$pop'].removeClass('shown');
+          }, 200)
+        }
+      });
 
     })
     return p;
