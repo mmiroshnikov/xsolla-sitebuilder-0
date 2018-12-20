@@ -156,7 +156,7 @@ define([
       ],
 
       'back': [
-
+        ['.xsb_preview_bg_tint', 'back'],
         ['.xsbw_z_tint1', 'back'],
         ['.xsb_widg_w_bg', 'back'],
         ['.xsb_0_icon_bg', 'backClean'],
