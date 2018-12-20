@@ -328,7 +328,7 @@ define(['_',
           thisTheme[colorName] = m__rgbToHexAlpha(color)[0];
           // thiss.setCustomTheme(colorName, m__rgbToHexAlpha(color)[0]);
         })
-        thisTheme['back'] = m__hexToRGB(thisTheme['accent_text'], 0.3);
+        thisTheme['back'] = thisTheme['accent_text'];
         thiss.changeTheme(thisTheme, thiss.defaults.theme);
       }
     });
@@ -370,6 +370,14 @@ define(['_',
             break;
           case 'back':
             rul = 'background-color';
+            break;
+          case 'back50':
+            rul = 'background-color';
+            clr = m__hexToRGB(color, 0.5);
+            break;
+          case 'back20':
+            rul = 'background-color';
+            clr = m__hexToRGB(color, 0.2);
             break;
           case 'backClean':
             rul = 'background-color';
