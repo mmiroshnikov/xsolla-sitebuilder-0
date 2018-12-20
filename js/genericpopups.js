@@ -17,6 +17,8 @@ define([
       var popData = oneTrigger.dataset.xpop;
       if (popData.split(',').length > 1) {
         var popName = popData.split(',')[1];
+        var toggle = false;
+        if (popData.split(',')[2]) toggle = true;
         var trigger = oneTrigger;
         p[popName + Object.keys(p).length] = {
           'name': popName,
@@ -41,8 +43,14 @@ define([
             evt.stopPropagation();
             p[onePopUniqName]['$pop'].toggleClass('shown');
             setTimeout(function () {
-              p[onePopUniqName]['$popB'].toggleClass('shown');
-              p[onePopUniqName]['$popZ'].toggleClass('shown');
+              if () {
+                p[onePopUniqName]['$popB'].toggleClass('shown');
+                p[onePopUniqName]['$popZ'].toggleClass('shown');
+              } else {
+                p[onePopUniqName]['$popB'].toggleClass('shown');
+                p[onePopUniqName]['$popZ'].toggleClass('shown');
+              }
+
             },10)
           }
         })
