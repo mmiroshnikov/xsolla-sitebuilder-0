@@ -17,7 +17,7 @@ define([
       var popData = oneTrigger.dataset.xpop;
       if (popData.split(',').length > 1) {
         var popName = popData.split(',')[1];
-        var toggle = false;
+        var toggl = false;
         if (popData.split(',')[2]) toggle = true;
         var trigger = oneTrigger;
         p[popName + Object.keys(p).length] = {
@@ -43,7 +43,7 @@ define([
             evt.stopPropagation();
             p[onePopUniqName]['$pop'].toggleClass('shown');
             setTimeout(function () {
-              if (!toggle) {
+              if (!toggl) {
                 p[onePopUniqName]['$popB'].addClass('shown');
                 p[onePopUniqName]['$popZ'].addClass('shown');
               } else {
