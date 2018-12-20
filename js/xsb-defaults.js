@@ -41,6 +41,7 @@ define([
 
     this.theme = {
       'textcolor': [
+        ['.xsb_top_li--accord--theme', 'color'],
         ['.xsb_body', 'color'],
         ['.xsb_theme_cr--3', 'back'],
         ['.xsb_sett_block--colorpicker', 'colorClean'],
