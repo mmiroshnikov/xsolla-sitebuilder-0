@@ -55,6 +55,7 @@ define([
           }
         })
 
+
       p[onePopUniqName]['$popZ'].on({
         click: function (evt) {
           p[onePopUniqName]['$popB'].removeClass('shown');
