@@ -56,7 +56,7 @@ define([
           }, 200)
         }
       });
-      $('[data-xpop=\'z,' + popName + '\']').on({
+      $('[data-xpop-z=\'' + popName + '\']').on({
         click: function (evt) {
           p[onePopUniqName]['$popB'].removeClass('shown');
           p[onePopUniqName]['$popZ'].removeClass('shown');
