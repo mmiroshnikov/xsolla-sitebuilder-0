@@ -39,20 +39,20 @@ define([
         $(p[onePopUniqName]['trigger']).on({
           click: function (evt) {
             evt.stopPropagation();
-            p[onePopUniqName]['$pop'].addClass('shown');
+            p[onePopUniqName]['$pop'].toggleClass('shown');
             setTimeout(function () {
-              p[onePopUniqName]['$popB'].addClass('shown');
-              p[onePopUniqName]['$popZ'].addClass('shown');
+              p[onePopUniqName]['$popB'].toggleClass('shown');
+              p[onePopUniqName]['$popZ'].toggleClass('shown');
             },10)
           }
         })
 
         p[onePopUniqName]['$popZ'].on({
           click: function (evt) {
-            p[onePopUniqName]['$popB'].removeClass('shown');
-            p[onePopUniqName]['$popZ'].removeClass('shown');
+            p[onePopUniqName]['$popB'].toggleClass('shown');
+            p[onePopUniqName]['$popZ'].toggleClass('shown');
             setTimeout(function () {
-              p[onePopUniqName]['$pop'].removeClass('shown');
+              p[onePopUniqName]['$pop'].toggleClass('shown');
             },200)
           }
         })
