@@ -158,11 +158,11 @@ define([
       'back': [
         ['.xsb_theme_creative', 'back50'],
         ['.xsb_preview_bg_tint', 'back20'],
-        ['.xsbw_z_tint1', 'back'],
+        ['.xsbw_z_tint1', 'back50'],
         ['.xsb_widg_w_bg', 'back'],
         ['.xsb_0_icon_bg', 'backClean'],
         ['.xsb_0_icon_bg', 'backClean'],
-        ['body', 'back'],
+        // ['body', 'back'],
         ['.xsb_preview_bg', 'back'],
         // ['.xsb_button', 'colorClean'],
         ['.xsb_bg_tint', 'back'],
