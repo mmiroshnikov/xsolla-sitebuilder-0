@@ -162,7 +162,7 @@ define([
         ['.xsb_widg_w_bg', 'back'],
         ['.xsb_0_icon_bg', 'backClean'],
         ['.xsb_0_icon_bg', 'backClean'],
-        // ['body', 'back'],
+        ['body', 'back'],
         ['.xsb_preview_bg', 'back'],
         // ['.xsb_button', 'colorClean'],
         ['.xsb_bg_tint', 'back'],
