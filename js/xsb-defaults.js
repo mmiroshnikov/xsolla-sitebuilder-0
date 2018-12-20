@@ -157,7 +157,7 @@ define([
 
       'back': [
         // ['.xsb_theme_creative', 'back20'],
-        ['.xsb_preview_bg_tint', 'back20'],
+        ['.xsb_preview_bg_tint', 'back50'],
         ['.xsbw_z_tint1', 'back50'],
         ['.xsb_widg_w_bg', 'back'],
         ['.xsb_0_icon_bg', 'backClean'],
