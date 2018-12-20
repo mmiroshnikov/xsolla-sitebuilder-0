@@ -43,9 +43,9 @@ define([
             evt.stopPropagation();
             p[onePopUniqName]['$pop'].toggleClass('shown');
             setTimeout(function () {
-              if () {
-                p[onePopUniqName]['$popB'].toggleClass('shown');
-                p[onePopUniqName]['$popZ'].toggleClass('shown');
+              if (!toggle) {
+                p[onePopUniqName]['$popB'].addClass('shown');
+                p[onePopUniqName]['$popZ'].addClass('shown');
               } else {
                 p[onePopUniqName]['$popB'].toggleClass('shown');
                 p[onePopUniqName]['$popZ'].toggleClass('shown');
