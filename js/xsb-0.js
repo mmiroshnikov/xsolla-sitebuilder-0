@@ -328,7 +328,7 @@ define(['_',
           thisTheme[colorName] = m__rgbToHexAlpha(color)[0];
           // thiss.setCustomTheme(colorName, m__rgbToHexAlpha(color)[0]);
         })
-        thisTheme['back'] = m__hexToRGB(thisTheme['accent_text'], 0.5);
+        thisTheme['back'] = m__hexToRGB(thisTheme['accent_text'], 0.3);
         thiss.changeTheme(thisTheme, thiss.defaults.theme);
       }
     });
