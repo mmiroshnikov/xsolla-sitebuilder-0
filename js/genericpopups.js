@@ -18,7 +18,7 @@ define([
       if (popData.split(',').length > 1) {
         var popName = popData.split(',')[1];
         var toggl = false;
-        if (popData.split(',')[2]) toggle = true;
+        if (popData.split(',')[2]) toggl = true;
         var trigger = oneTrigger;
         p[popName + Object.keys(p).length] = {
           'name': popName,
