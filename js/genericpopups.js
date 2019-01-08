@@ -48,10 +48,10 @@ define([
 
     Object.keys(p).forEach(function (popName, i) {
       Object.keys(p[popName]).forEach(function (onePopUniqName, i) {
-        var onePopName = p[onePopUniqName]['name'];
-        p[onePopUniqName]['$pop'] = $('[data-xpop=\'' + onePopName + '\']');
-        p[onePopUniqName]['$popB'] = p[onePopUniqName]['$pop'].find('[data-xpop=\'b\']');
-        p[onePopUniqName]['$popZ'] = p[onePopUniqName]['$pop'].find('[data-xpop=\'z\']');
+        var onePopName = p[popName][onePopUniqName]['name'];
+        p[popName][onePopUniqName]['$pop'] = $('[data-xpop=\'' + onePopName + '\']');
+        p[popName][onePopUniqName]['$popB'] = p[popName][onePopUniqName]['$pop'].find('[data-xpop=\'b\']');
+        p[popName][onePopUniqName]['$popZ'] = p[popName][onePopUniqName]['$pop'].find('[data-xpop=\'z\']');
 
 
         $(p[onePopUniqName]['trigger']).on({
