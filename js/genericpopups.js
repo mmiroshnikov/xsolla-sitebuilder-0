@@ -6,7 +6,7 @@ define([
   function GenericPopups() {
 
     this.popups = this.getPopups();
-    this.getZs = this.getZs();
+    // this.getZs = this.getZs();
 
   }
 
@@ -26,12 +26,12 @@ define([
 
   GenericPopups.prototype.getPopups = function () {
     var p = {};
+    var toggl = false;
 
-    $(':attr(\'^data-xpop\')').each(function (i, oneTrigger) {
+    $(':attrStrict(\'data-xpop\')').each(function (i, oneTrigger) {
       var popData = oneTrigger.dataset.xpop;
       if (popData.split(',').length > 1) {
         var popName = popData.split(',')[1];
-        var toggl = false;
         if (popData.split(',')[2]) toggl = true;
         var trigger = oneTrigger;
         p[popName] =  p[popName] || {}
@@ -54,17 +54,17 @@ define([
         p[popName][onePopUniqName]['$popZ'] = p[popName][onePopUniqName]['$pop'].find('[data-xpop=\'z\']');
 
 
-        $(p[onePopUniqName]['trigger']).on({
+        $(p[popName][onePopUniqName]['trigger']).on({
           click: function (evt) {
             evt.stopPropagation();
-            p[onePopUniqName]['$pop'].toggleClass('shown');
+            p[popName][onePopUniqName]['$pop'].toggleClass('shown');
             setTimeout(function () {
               if (!toggl) {
-                p[onePopUniqName]['$popB'].addClass('shown');
-                p[onePopUniqName]['$popZ'].addClass('shown');
+                p[popName][onePopUniqName]['$popB'].addClass('shown');
+                p[popName][onePopUniqName]['$popZ'].addClass('shown');
               } else {
-                p[onePopUniqName]['$popB'].toggleClass('shown');
-                p[onePopUniqName]['$popZ'].toggleClass('shown');
+                p[popName][onePopUniqName]['$popB'].toggleClass('shown');
+                p[popName][onePopUniqName]['$popZ'].toggleClass('shown');
               }
 
             },10)
@@ -72,15 +72,28 @@ define([
         })
 
 
-      p[onePopUniqName]['$popZ'].on({
+      p[popName][onePopUniqName]['$popZ'].on({
         click: function (evt) {
-          p[onePopUniqName]['$popB'].removeClass('shown');
-          p[onePopUniqName]['$popZ'].removeClass('shown');
+          p[popName][onePopUniqName]['$popB'].removeClass('shown');
+          p[popName][onePopUniqName]['$popZ'].removeClass('shown');
           setTimeout(function () {
-            p[onePopUniqName]['$pop'].removeClass('shown');
+            p[popName][onePopUniqName]['$pop'].removeClass('shown');
           }, 200)
         }
       });
+
+      $('[data-xpop-z=\'' + onePopName + '\']').on({
+        click: function (evt) {
+          // var popData = oneTrigger.dataset.xpopZ;
+          p[popName][onePopUniqName]['$popB'].removeClass('shown');
+          p[popName][onePopUniqName]['$popZ'].removeClass('shown');
+          setTimeout(function () {
+            p[popName][onePopUniqName]['$pop'].removeClass('shown');
+          }, 10)
+        }
+      });
+
+
 
     })
     });

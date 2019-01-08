@@ -16,7 +16,6 @@ jQuery.expr.pseudos.attr = $.expr.createPseudo(function (arg) {
 
 
 jQuery.expr.pseudos.attrStrict = $.expr.createPseudo(function (arg) {
-  var regexp = new RegExp();
   return function(elem) {
     for(var i = 0; i < elem.attributes.length; i++) {
       var attr = elem.attributes[i];
@@ -134,7 +133,7 @@ requirejs.config({
     // 'react-dom':                   'https://unpkg.com/react-dom@15.3.2/dist/react-dom',
     'quill':                          'https://cdn.quilljs.com/1.3.1/quill',
     '_':                              'https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min',
-    'xsolla_genericpopups':           'https://raw.githack.com/mmiroshnikov/xsolla-sitebuilder-0/master/js/genericpopups',  //'js/genericpopups', // 'https://cdn.xsolla.net/misc/mikelibs/genericpopups/latest/genericpopups',
+    'xsolla_genericpopups':           'js/genericpopups', // 'https://cdn.xsolla.net/misc/mikelibs/genericpopups/latest/genericpopups',
     // 'swiper':                         'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min',
     // 'xsolla-uikit':                'http://http://xsolla.maiik.ru/xsolla-sitebuilder/libs/node_modules/xsolla-uikit/select',
   },
