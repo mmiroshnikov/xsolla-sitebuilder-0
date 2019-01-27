@@ -317,7 +317,7 @@ define(['_',
               colorName = 'accent';
               break;
             case 2:
-              colorName = 'accent_text';
+              colorName = 'back';
               break;
             default:
               colorName = 'textcolor';

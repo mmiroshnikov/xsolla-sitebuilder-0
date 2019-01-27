@@ -26,7 +26,7 @@ define([
 
 
     this.defaultTheme = {
-      'back': 'rgba(8, 17, 43, 0.84)', //main bg color
+      'back': 'rgba(8, 17, 43, 0.24)', //main bg color
       'textcolor': '#fac92d', //main color
       'accent_text': '#000000',  //Buy button text
       'accent': '#fb1752',  //Buy button bg, top up button bg
