@@ -330,7 +330,7 @@ define(['_',
           thisTheme[colorName] = m__rgbToHexAlpha(color)[0];
           // thiss.setCustomTheme(colorName, m__rgbToHexAlpha(color)[0]);
         })
-        thisTheme['accent_text'] = thisTheme['back'];
+        thisTheme['back'] = thisTheme['accent_text'];
         thiss.changeTheme(thisTheme, thiss.defaults.theme);
       }
     });
