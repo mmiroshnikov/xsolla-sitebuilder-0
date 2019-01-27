@@ -41,6 +41,7 @@ define([
 
     this.theme = {
       'textcolor': [
+        ['.color_text', 'backClean'],
         ['.xsb_top_li--accord--theme', 'color'],
         ['.xsb_body', 'color'],
         ['.xsb_theme_cr--3', 'back'],
@@ -97,6 +98,7 @@ define([
         ['.xsbps_topmenu_dropdown', 'colorClean'],
       ],
       'accent': [
+        ['.color_accent', 'backClean'],
         ['.xsb_theme_cr--1', 'back'],
         //Widgets
         ['.xsb_w_menu_a:hover', 'backClean'],
@@ -134,6 +136,7 @@ define([
       ],
 
       'accent_text': [
+        ['.color_accenttext', 'backClean'],
         ['.xsb_w_menu_a:hover', 'color']
         ['.xsb_theme_cr--2', 'back'],
         ['.xsb_0_icon_accent_txt', 'colorClean'], //background-color #hex
@@ -158,6 +161,7 @@ define([
       ],
 
       'back': [
+        ['.color_back', 'backClean'],
         // ['.xsb_theme_creative', 'back20'],
         ['.xsb_preview_bg_tint', 'back20'],
         ['.xsbw_z_tint1', 'back50'],
