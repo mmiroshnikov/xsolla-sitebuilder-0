@@ -179,8 +179,8 @@ define(['_',
     // this.version = version;
     this.defaults = new Defaults();
     // this._xsb = this;
-    // this.modulesDefault = this.defaults.modulesDefault;
-    // this.globalDefault = this.defaults.globalDefault;
+    this.modulesDefault = this.defaults.modulesDefault;
+    this.globalDefault = this.defaults.globalDefault;
     // this.dataX = this.getData();
     // // this.dataT = {'media': this.dataX['global']['bg']}
     // // this.dataX = {};
@@ -209,7 +209,7 @@ define(['_',
     // this.settngs = new Settings(this, this.getUrlHash());
     // this.gatherTemplatesAndControllers();
     // this.addListeners();
-    // this.applyShapes();
+    this.applyShapes();
 
     // this.bg = this.getBackground();
 
