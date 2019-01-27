@@ -135,8 +135,8 @@ define([
         ['.xsbps_topmenu_balance', 'colorClean'],
       ],
 
-      'accent_text': [
-        ['.color_accenttext', 'backClean'],
+      'back': [
+        ['.color_back', 'backClean'],
         ['.xsb_w_menu_a:hover', 'color']
         ['.xsb_theme_cr--2', 'back'],
         ['.xsb_0_icon_accent_txt', 'colorClean'], //background-color #hex
@@ -160,8 +160,8 @@ define([
         ['.xsbps_topmenu_balance', 'colorClean'],
       ],
 
-      'back': [
-        ['.color_back', 'backClean'],
+      'accent_text': [
+        ['.color_accenttext', 'backClean'],
         // ['.xsb_theme_creative', 'back20'],
         ['.xsb_preview_bg_tint', 'back20'],
         ['.xsbw_z_tint1', 'back50'],
