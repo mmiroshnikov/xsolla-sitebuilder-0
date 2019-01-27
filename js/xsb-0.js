@@ -317,10 +317,10 @@ define(['_',
               colorName = 'accent';
               break;
             case 2:
-              colorName = 'accent_text';
+              colorName = 'back';
               break;
             case 3:
-              colorName = 'back';
+              colorName = 'accent_text';
               break;
             default:
               colorName = 'textcolor';
@@ -330,7 +330,7 @@ define(['_',
           thisTheme[colorName] = m__rgbToHexAlpha(color)[0];
           // thiss.setCustomTheme(colorName, m__rgbToHexAlpha(color)[0]);
         })
-        thisTheme['back'] = thisTheme['accent_text'];
+        thisTheme['accent_text'] = thisTheme['back'];
         thiss.changeTheme(thisTheme, thiss.defaults.theme);
       }
     });
