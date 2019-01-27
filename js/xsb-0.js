@@ -181,8 +181,8 @@ define(['_',
     // this._xsb = this;
     this.modulesDefault = this.defaults.modulesDefault;
     this.globalDefault = this.defaults.globalDefault;
-    // this.dataX = this.getData();
-    // // this.dataT = {'media': this.dataX['global']['bg']}
+    this.dataX = this.getData();
+    // this.dataT = {'media': this.dataX['global']['bg']}
     // // this.dataX = {};
     // // this.dataX['modules'] = this.getData('modules');
     // // this.dataX['global'] = this.getData('global');
