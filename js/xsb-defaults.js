@@ -203,7 +203,7 @@ define([
         ['.sp-choose', 'border-radius'],
         ['.xsb_0_icon_theme', 'border-radius'],
         ['.xsb_subs_input', 'border-radius'],
-        ['.xsb_set_col', 'border-radius'],
+        ['.xsb_sett_colorform', 'border-radius'],
 
         // ['.xsbm_mailbody', 'border-radius'],
         // ['.xsbl_bd', 'border-radius'],
