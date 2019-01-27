@@ -528,7 +528,9 @@ define(['_',
 
   XsollaSiteBuilder.prototype.setData = function (what, newDataEntry) {
 
-    this.noti.showText('Saved', 'saved', 600);
+    // this.noti.showText('Saved', 'saved', 600);
+
+
     // return;
 
     // if (!what) {
