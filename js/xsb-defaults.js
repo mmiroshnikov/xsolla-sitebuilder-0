@@ -134,6 +134,7 @@ define([
       ],
 
       'accent_text': [
+        ['.xsb_w_menu_a:hover', 'color']
         ['.xsb_theme_cr--2', 'back'],
         ['.xsb_0_icon_accent_txt', 'colorClean'], //background-color #hex
         ['.xsb_button', 'colorClean'], //background-color #hex
